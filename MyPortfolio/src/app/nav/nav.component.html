@@ -1,0 +1,42 @@
+<!--*** NAVIGATION ***-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+  <a class="navbar-brand" [routerLink]="['/home']">
+    <img src="favicon.ico" width="32" height="32" class="d-inline-block align-top"
+      alt="">
+  Ravi kashyap
+  </a>
+
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" (click)="clickedInside($event)"
+  aria-controls="navbarNav" [attr.aria-expanded]="!isCollapsed"
+  aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+  <div class="navbar-collapse"  id="navbarNav" [collapse]="isCollapsed">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/home']">Home</a>
+      </li>
+    
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/login']">Login</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/signup']">Singup</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/projects']">Projects</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="" target="_blank">Resume</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,51 @@
+:host {
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+#homeContainer {
+  display: grid;
+  grid-template-areas:
+    " myName    myName  "
+    " myRole    myRole  "
+    " projects  resume  "
+    " contact   contact ";
+  column-gap: 5px;
+  place-items: center;
+  text-align: center;
+}
+
+#myName {
+  grid-area: myName;
+  font-size: 3.5em;
+}
+
+#myRole {
+  grid-area: myRole;
+  font-size: 2.5em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#projectBtn {
+  grid-area: projects;
+  font-size: 1.3em;
+}
+
+#resumeBtn {
+  grid-area: resume;
+  font-size: 1.3em;
+}
+
+#iconsContainer {
+  margin-top: 40px;
+  grid-area: contact;
+  width: 100%;
+}
+#loginBtn{
+  grid-area: projects;
+  font-size: 1.3em;
+
+}

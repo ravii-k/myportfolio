@@ -1,0 +1,63 @@
+<!--*** CONTACT ***-->
+<h1 id="contactsHeading">Get In Touch</h1>
+<div id="contactsContainer">
+
+  <form [formGroup]="contactForm" (ngSubmit)="emailForm()">
+
+    <div class="form-group">
+      <label class="control-label">Name:</label>
+      <input type="text" class="form-control" formControlName="name" placeholder="Enter Name..."
+        [ngClass]="{'is-invalid': contactForm.get('name').errors && contactForm.get('name').touched}">
+
+      <div class="invalid-feedback"
+        *ngIf="contactForm.get('name').hasError('required') && contactForm.get('name').touched">
+        Name is required</div>
+      <div class="invalid-feedback"
+        *ngIf="contactForm.get('name').hasError('pattern') && contactForm.get('name').touched">
+        Invalid characters in Name</div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">Email:</label>
+      <input type="email" class="form-control" formControlName="email" placeholder="Enter Email..."
+        [ngClass]="{'is-invalid': contactForm.get('email').errors && contactForm.get('email').touched}">
+
+      <div class="invalid-feedback"
+        *ngIf="contactForm.get('email').hasError('required') && contactForm.get('email').touched">
+        Email is required</div>
+      <div class="invalid-feedback"
+        *ngIf="contactForm.get('email').hasError('email') && contactForm.get('email').touched">
+        Invalid Email Address</div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label">Message:</label>
+      <textarea type="text" class="form-control" formControlName="message" placeholder="Message..." cols="30" rows="10"
+        [ngClass]="{'is-invalid': contactForm.get('message').errors && contactForm.get('message').touched}"></textarea>
+
+      <div class="invalid-feedback"
+        *ngIf="contactForm.get('message').hasError('required') && contactForm.get('message').touched">
+        Message is required</div>
+    </div>
+
+    <button class="btn btn-success" [disabled]="!contactForm.valid" type="submit" id="formSubmit">Submit</button>
+  </form>
+
+  <div id="iconsContainer">
+    <a href="https://github.com/lenzoburger" class="contactIcon" id="githubLink" target="_blank">
+      <fa-icon [icon]="['fab', 'github']"></fa-icon>
+    </a>
+
+    <a href="https://www.linkedin.com/in/lencho-burka-935b93118/" target="_blank" class="contactIcon" id="linkedInLink">
+      <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+    </a>
+
+    <a href="mailto:lenzoburger@gmail.com" class="contactIcon" id="emailLink">
+    </a>
+  </div>
+
+</div>
+
+<!-- <P>Form value: {{contactForm.value | json}}</P>
+
+<P>Form Status: {{contactForm.status | json}}</P> -->

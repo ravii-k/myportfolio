@@ -1,0 +1,70 @@
+$formLabelWidth: 90px;
+$btnSuccesColor: #28a745;
+:host {
+  display: grid;
+  grid-template-rows: minmax(60px, auto) auto;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  grid-row-gap: 30px;
+}
+
+#contactsHeading {
+  margin-top: 30px;
+  margin-left: $formLabelWidth;
+  grid-area: 1 / 1;
+}
+
+#contactsContainer {
+  grid-area: 2 / 1;
+  display: grid;
+  grid-template-areas:
+    " contactForm     "
+    " iconsContainer  ";
+  place-items: center;
+  grid-row-gap: 30px;
+
+  form {
+    grid-area: contactForm;
+    display: grid;
+    place-items: center;
+    grid-row-gap: 10px;
+
+    .form-group{
+      width: 100%;
+      display: grid;
+      grid-template-columns: $formLabelWidth auto;
+
+      label {
+        grid-area: 1 / 1;
+      }
+
+      input, textarea {
+        grid-area: 1 / 2;
+      }
+
+      .invalid-feedback {
+        font-weight: bold;
+        grid-area: 2 / 2
+      }
+    }
+
+    #formSubmit{
+      margin-top: 10px;
+      margin-left: $formLabelWidth;
+    }
+
+    #formSubmit:disabled{
+      background-color: lighten($btnSuccesColor, 25%);
+    }
+
+  }
+}
+
+#iconsContainer {
+  width: 100%;
+  grid-area: iconsContainer;
+  margin-left: $formLabelWidth;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

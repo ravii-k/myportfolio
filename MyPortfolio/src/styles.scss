@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+/*** FONTS IMPORTS ***/
+@import "../node_modules/alertifyjs/build/css/alertify.min.css";
+@import "../node_modules/alertifyjs/build/css/themes/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Oxygen+Mono");
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/animate.css/animate.min.css";
+
+/*** VARIABLES / COLORS ***/
+:root {
+  --background: #202024;
+  --main-grey: rgba(17, 17, 17, 0.9);
+  --secondary-grey: rgba(17, 17, 17, 0.9);
+  --light-grey: #3c3c44;
+  --gold: #ffffff;
+  --offWhite: #e6e6e6;
+  --hover: rgba(7, 3, 3, 0.25);
+}
+
+body {
+  color: var(--offWhite);
+  font-family: "Oxygen Mono", monospace, Arial, Helvetica, sans-serif;
+}
+
+app-root {
+  display: grid;
+  grid-template-rows: minmax(58px, auto) minmax(85vh, auto) minmax(20px, auto);
+}
+
+app-nav {
+  grid-area: 1 / 1;
+}
+
+#background {
+  grid-area: 2 / 1;
+  display: grid;
+  grid-template-rows: 1fr;
+
+  background: url("assets/images/background1.jpg") no-repeat center center/cover;
+  border-bottom: 6px solid var(--gold);
+}
+
+//routed component
+router-outlet + * {
+  grid-area: 1 / 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.button:hover {
+  background-color: var(--hover);
+  border: 2px solid #007bff;
+  color: var(--offWhite);
+}
+
+#iconsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  place-items: center;
+  #githubLink {
+    grid-area: 1 / 1;
+    animation-fill-mode: both;
+    fa-icon {
+      color: rgb(102, 43, 129);
+    }
+  }
+
+  #linkedInLink {
+    grid-area: 1 / 2;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    fa-icon {
+      color: rgb(0, 127, 178);
+    }
+  }
+
+  #emailLink {
+    grid-area: 1 / 3;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48ZyBpZD0ic3VyZmFjZTEiPjxwYXRoIHN0eWxlPSIgZmlsbDojRTBFMEUwOyIgZD0iTSA1LjUgNDAuNSBMIDQyLjUgNDAuNSBDIDQ0LjQzMzU5NCA0MC41IDQ2IDM4LjkzMzU5NCA0NiAzNyBMIDQ2IDExIEMgNDYgOS4wNjY0MDYgNDQuNDMzNTk0IDcuNSA0Mi41IDcuNSBMIDUuNSA3LjUgQyAzLjU2NjQwNiA3LjUgMiA5LjA2NjQwNiAyIDExIEwgMiAzNyBDIDIgMzguOTMzNTk0IDMuNTY2NDA2IDQwLjUgNS41IDQwLjUgWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6I0Q5RDlEOTsiIGQ9Ik0gMjYgNDAuNSBMIDQyLjUgNDAuNSBDIDQ0LjQzMzU5NCA0MC41IDQ2IDM4LjkzMzU5NCA0NiAzNyBMIDQ2IDExIEMgNDYgOS4wNjY0MDYgNDQuNDMzNTk0IDcuNSA0Mi41IDcuNSBMIDUuNSA3LjUgQyAzLjU2NjQwNiA3LjUgMiA5LjA2NjQwNiAyIDExIFogIj48L3BhdGg+PHBhdGggc3R5bGU9IiBmaWxsOiNFRUVFRUU7IiBkPSJNIDYuNzQ2MDk0IDQwLjUgTCA0Mi41IDQwLjUgQyA0NC40MzM1OTQgNDAuNSA0NiAzOC45MzM1OTQgNDYgMzcgTCA0NiAxMS41IFogIj48L3BhdGg+PHBhdGggc3R5bGU9IiBmaWxsOiNFMEUwRTA7IiBkPSJNIDI1Ljc0NjA5NCA0MC41IEwgNDIuNSA0MC41IEMgNDQuNDMzNTk0IDQwLjUgNDYgMzguOTMzNTk0IDQ2IDM3IEwgNDYgMTEuNSBMIDE4Ljc2OTUzMSAzMS42MTcxODggWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6I0NBMzczNzsiIGQ9Ik0gNDIuNSA5LjUgTCA1LjUgOS41IEMgMy41NjY0MDYgOS41IDIgOS4wNjY0MDYgMiAxMSBMIDIgMzcgQyAyIDM4LjkzMzU5NCAzLjU2NjQwNiA0MC41IDUuNSA0MC41IEwgNyA0MC41IEwgNyAxMiBMIDQxIDEyIEwgNDEgNDAuNSBMIDQyLjUgNDAuNSBDIDQ0LjQzMzU5NCA0MC41IDQ2IDM4LjkzMzU5NCA0NiAzNyBMIDQ2IDExIEMgNDYgOS4wNjY0MDYgNDQuNDMzNTk0IDkuNSA0Mi41IDkuNSBaICI+PC9wYXRoPjxwYXRoIHN0eWxlPSIgZmlsbDojRjVGNUY1OyIgZD0iTSA0Mi41IDcuNSBMIDUuNSA3LjUgQyAzLjU2NjQwNiA3LjUgMiA5LjAzNTE1NiAyIDExIEMgMiAxMi4yMDcwMzEgMy41MTk1MzEgMTMuMjU3ODEzIDMuNTE5NTMxIDEzLjI1NzgxMyBMIDI0IDI3Ljc1NzgxMyBMIDQ0LjQ4MDQ2OSAxMy4yNTc4MTMgQyA0NC40ODA0NjkgMTMuMjU3ODEzIDQ2IDEyLjIwNzAzMSA0NiAxMSBDIDQ2IDkuMDM1MTU2IDQ0LjQzMzU5NCA3LjUgNDIuNSA3LjUgWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6I0U4NEY0QjsiIGQ9Ik0gNDMuMjQ2MDk0IDcuNTgyMDMxIEwgMjQgMjEgTCA0Ljc1MzkwNiA3LjU4MjAzMSBDIDMuMTc5Njg4IDcuOTE3OTY5IDIgOS4yOTY4NzUgMiAxMSBDIDIgMTIuMjA3MDMxIDMuNTE5NTMxIDEzLjI1NzgxMyAzLjUxOTUzMSAxMy4yNTc4MTMgTCAyNCAyNy43NTc4MTMgTCA0NC40ODA0NjkgMTMuMjU3ODEzIEMgNDQuNDgwNDY5IDEzLjI1NzgxMyA0NiAxMi4yMDcwMzEgNDYgMTEgQyA0NiA5LjI5Njg3NSA0NC44MjAzMTMgNy45MTc5NjkgNDMuMjQ2MDk0IDcuNTgyMDMxIFogIj48L3BhdGg+PC9nPjwvc3ZnPg==') 50% 50% no-repeat;
+    background-size: 65%;
+  }
+}
+
+.contactIcon {
+  font-size: 1.7em;
+  border-radius: 50%;
+  padding: 0.5em;
+  background: var(--secondary-grey);
+  border: 2px solid var(--offWhite);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in;
+  animation-duration: 1.8s;
+}
+
+.contactIcon:hover {
+  background-color: var(--hover);
+  border: 2px solid #007bff;
+}

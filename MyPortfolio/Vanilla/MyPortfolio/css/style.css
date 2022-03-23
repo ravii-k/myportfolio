@@ -1,0 +1,536 @@
+/*** FONTS IMPORTS ***/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oxygen+Mono');
+
+/*** VARIABLES / COLORS ***/
+:root {
+  --background: #202024;
+  --main-grey: rgba(17, 17, 17, 0.9);
+  --secondary-grey: rgba(17, 17, 17, 0.9);
+  --light-grey: #3c3c44;
+  --gold: #965f33;
+  --offWhite: #e6e6e6;
+  --hover: rgba(255, 255, 255, 0.25);
+}
+
+/*** MAIN STYLES ***/
+.animated {
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:none!important;
+  animation-fill-mode:none!important
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--offWhite);
+  font-family: 'Oxygen Mono', monospace, Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background: var(--secondary-grey);
+  border: 2px solid var(--offWhite);
+  color: var(--offWhite);
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  animation-duration: 1.6s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--hover);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+#pageContainer {
+  padding: 5em;
+  padding-top: 0;
+}
+
+.sectionHeading {
+  font-size: 3em;
+  margin: 50px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.sectionInfo {
+  font-size: 1.4em;
+}
+
+/*** NAVIGATION ***/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: var(--main-grey);
+  border-bottom: 6px solid var(--gold);
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.2em;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--offWhite);
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks a {
+  color: var(--offWhite);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.navLinks li a:hover {
+  color: var(--gold);
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--offWhite);
+  margin: 5px;
+  transition: all 0.4s ease;
+}
+
+.navActive {
+  transform: translateX(0%) !important;
+}
+
+.toggleOpenClose .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggleOpenClose .line2 {
+  opacity: 0;
+}
+
+.toggleOpenClose .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*** LANDING ***/
+#landing {
+  height: 70vh;
+  background: url("../images/background.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 6px solid var(--gold);
+}
+
+.landingOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title, #subHeading  {
+  margin: 20px;
+  font-weight: normal;
+}
+
+#title {
+  font-size: 3.5em;
+}
+
+#subHeading {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.landingButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#projectBtn {
+  margin-right: 25px;
+  font-size: 1.3em;
+}
+
+#resumeBtn {
+  font-size: 1.3em;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 40px 0 40px 0;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.contactIcon  {
+  font-size: 1.7em;
+  border-radius: 50%;
+  padding: 0.5em;
+  background: var(--secondary-grey);
+  border: 2px solid var(--offWhite);
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in;
+  animation-duration: 1.6s;
+}
+
+.contactIcon:hover {
+  background-color: var(--hover);
+}
+
+#githubLink {
+  color: rgb(102, 43, 129);
+}
+
+#linkedInLink {
+  color: rgb(0, 127, 178);
+  animation-delay: .2s;
+}
+
+#twitterLink {
+  color: rgb(0, 172, 237);
+  animation-delay: .4s;
+}
+
+#emailLink {
+  color: #fff;
+  animation-delay: .6s;
+}
+
+/*** MY WORK SECTION / PROJECT CARDS ***/
+#cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+}
+
+.cardBody {
+  padding: 6px;
+  width: 100%;
+  border: 2px solid var(--light-grey);
+}
+
+.projectImageWrapper {
+  width: 300px;
+  height: 300px;
+}
+
+.screenshot {
+  height: 100%;
+  width: 100%;
+}
+
+.cardTitle {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.buttonWrapper .btn {
+  margin: 0.5rem;
+}
+
+.description {
+  margin-bottom: 15px;
+}
+
+.skillsList {
+  margin-top: 5px;
+  list-style: none;
+}
+
+.skillsList li{
+  border: 1px solid var(--background);
+  padding: 12px;
+  background-color: var(--light-grey);
+}
+
+/*** CONTACT SECTION ***/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+  margin: 0.7rem 0;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  width: 50vw;
+  margin-bottom: 1.2rem;
+  border-radius: 5px;
+}
+
+#formSubmit {
+  margin-top: 1rem;
+  width: auto;
+  font-size: 1.3rem;
+  padding: 1rem 3rem;
+}
+
+/***** THANKS PAGE *****/
+.thanksPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.thanksPage h2 {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+.thanksPage p {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.thanksPage .btn {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+/***** MEDIA QUERIES *****/
+@media screen and (max-width: 1140px) {
+  #cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    font-size: 1em;
+  }
+
+  .navLinks {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  #pageContainer {
+    padding: 2em;
+  }
+
+  #cardGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navLinks {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: var(--main-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navLinks li {
+    opacity: 0;
+    border-bottom: 2px solid var(--light-grey);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navLinks li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #landing {
+    height: 100vh;
+  }
+
+  .landingButtons {
+    flex-flow: column;
+  }
+  #projectBtn {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #title {
+    font-size: 2.5em;
+  }
+
+  #subHeading {
+    font-size: 2em;
+  }
+
+  .sectionHeading {
+    font-size: 2em;
+  }
+
+  .sectionInfo {
+    font-size: 1em;
+  }
+
+  .buttonWrapper {
+    flex-direction: column;
+  }
+
+  .buttonWrapper .btn{
+    margin-bottom: 1rem;
+  }
+
+  input,
+  textarea {
+    width: 80vw;
+  }
+
+  .thanksPage h2 {
+    font-size: 2rem;
+  }
+
+  .thanksPage p {
+    font-size: 1.5rem;
+  }
+
+  .thanksPage .btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card, .projectImageWrapper {
+    width: 275px;
+  }
+
+  .contactIcon {
+    font-size: 1.4em;
+    height: 50px;
+    width: 50px;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  #landing {
+    height: 100vh;
+  }
+}
+
+
+/***** KEYFRAMES / ANIMATIONS *****/
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

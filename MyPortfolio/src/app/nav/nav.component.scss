@@ -1,0 +1,119 @@
+.navbar {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-nav {
+  float: right;
+}
+
+.show > .navbar-nav {
+  float: none;
+}
+
+.nav-item:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+
+.nav-item {
+  transform: scale(1, 1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: var(--offWhite);
+  transform: scale(1, 1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+
+.show {
+  position: absolute;
+  background-color: #343a40!important;
+  top: 62px;
+  right: 5px;
+  text-align: center;
+  width: 110px !important;
+  z-index: 1;
+}
+
+.navbar-toggler:hover {
+  border: 2px solid #007bff;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+
+// nav {
+//   //display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   min-height: 8vh;
+//   background-color: var(--main-grey);
+//   border-bottom: 6px solid var(--gold);
+//   width: 100%;
+//   //position: fixed;
+// }
+
+
+
+
+// .navLinks {
+//   display: flex;
+//   justify-content: space-around;
+//   width: 40%;
+// }
+
+// .navLinks li {
+//   list-style: none;
+// }
+
+// .navLinks a {
+//   color: var(--offWhite);
+//   text-decoration: none;
+//   letter-spacing: 3px;
+//   font-weight: bold;
+//   font-size: 14px;
+// }
+
+// .navLinks li a:hover {
+//   color: var(--gold);
+// }
+
+// .burger {
+//   display: none;
+// }
+
+// .burger div {
+//   width: 25px;
+//   height: 3px;
+//   background-color: var(--offWhite);
+//   margin: 5px;
+//   transition: all 0.4s ease;
+// }
+
+// .navActive {
+//   transform: translateX(0%) !important;
+// }
+
+// .toggleOpenClose .line1 {
+//   transform: rotate(-45deg) translate(-5px, 6px);
+// }
+
+// .toggleOpenClose .line2 {
+//   opacity: 0;
+// }
+
+// .toggleOpenClose .line3 {
+//   transform: rotate(45deg) translate(-5px, -6px);
+// }

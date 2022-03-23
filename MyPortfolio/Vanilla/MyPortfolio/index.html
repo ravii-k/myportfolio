@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta author="Lencho  Burka">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Lencho Burka</title>
+</head>
+
+<body>
+  <!--*** NAVIGATION ***-->
+  <nav>
+    <div class="logo">
+      <a href="#">
+        <h4>Lencho Burka</h4>
+      </a>
+    </div>
+    <ul class="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#myWork">Projects</a></li>
+      <li><a href="#aboutMe">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="/LBurkaCV.pdf" target="_blank">Resume</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!--*** LANDING ***-->
+  <section id="landing">
+    <div class="landingOverlay">
+      <header>
+        <h1 id="title">Lencho Burka</h1>
+        <p id="subHeading">Software Engineer</p>
+        <div class="landingButtons">
+          <a href="#myWork" class="btn animated slideInLeft" id="projectBtn">
+            View Projects
+          </a>
+          <a href="/LBurkaCV.pdf" target="_blank" class="btn animated slideInRight" id="resumeBtn">
+            View Resume
+          </a>
+        </div>
+        <ul class="icons">
+          <a href="https://github.com/lenzoburger" target="_blank">
+            <li class="contactIcon animated bounceInDown" id="githubLink">
+              <i class="fab fa-github-alt"></i>
+            </li>
+          </a>
+          <a href="https://www.linkedin.com/in/lencho-burka-935b93118/" target="_blank">
+            <li class="contactIcon animated bounceInDown" id="linkedInLink">
+              <i class="fab fa-linkedin"></i>
+            </li>
+          </a>
+          <a href="mailto:lenzoburger@gmail.com">
+            <li class="contactIcon animated bounceInDown" id="emailLink">
+              <i class="far fa-envelope"></i>
+            </li>
+          </a>
+        </ul>
+      </header>
+    </div>
+  </section>
+
+  <!--*** MY Projects ***-->
+  <div id="pageContainer">
+    <section id="myWork">
+      <h1 class="sectionHeading">Projects</h1>
+      <div id="cardGrid">
+
+        <div class="cardContainer">
+          <div class="card">
+            <div class="projectImageWrapper">
+              <img class="screenshot" src="/images/elephantResort.png" alt=" Elphant Resort project screenshot">
+            </div>
+            <div class="cardBody">
+              <p class="cardTitle">Elephant Resort</p>
+              <div class="buttonWrapper">
+                <a href="http://elephantresort.ap-southeast-2.elasticbeanstalk.com/" target="_blank" class="btn">
+                  Live Preview
+                </a>
+                <a href="https://github.com/lenzoburger/ElephantResort" target="_blank" class="btn">
+                  View on Github
+                </a>
+              </div>
+              <p class="description">Site for booking hotel rooms and booking management</p>
+              <div class="projectSkills">
+                <p>Technologies Used:</p>
+                <ul class="skillsList">
+                  <li class="skill">Amazon Web Services (AWS)</li>
+                  <li class="skill">Linux</li>
+                  <li class="skill">Apache</li>
+                  <li class="skill">Mysql</li>
+                  <li class="skill">Php</li>
+                  <li class="skill">Javascript, JQuery</li>
+                  <li class="skill">HTML, CSS, XML</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardContainer">
+          <div class="card">
+            <div class="projectImageWrapper">
+              <img class="screenshot" src="/images/EthioTrade.png" alt=" Elphant Resort project screenshot">
+            </div>
+            <div class="cardBody">
+              <p class="cardTitle">Ethio Trade</p>
+              <div class="buttonWrapper">
+                <a href="/images/EthioTrade.png" target="_blank" class="btn">
+                  Preview
+                </a>
+                <a href="https://github.com/lenzoburger/EthioTrade" target="_blank" class="btn">
+                  View on Github
+                </a>
+              </div>
+              <p class="description">Web application for buying and selling goods</p>
+              <div class="projectSkills">
+                <p>Technologies Used:</p>
+                <ul class="skillsList">
+                  <li class="skill">ASP.NET Core 2+</li>
+                  <li class="skill">Angular 7+</li>
+                  <li class="skill">Entity Framework Core</li>
+                  <li class="skill">SQLite</li>
+                  <li class="skill"><a href="https://cloudinary.com/" target="_blank">Cloudinary- Cloud Photo
+                      Storage</a></li>
+                  <li class="skill">Node.js</li>
+                  <li class="skill">HTML/CSS/Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardContainer">
+          <div class="card">
+            <div class="projectImageWrapper">
+              <img class="screenshot" src="/images/user.png" alt=" Elphant Resort project screenshot">
+            </div>
+            <div class="cardBody">
+              <p class="cardTitle">Searh Engine Automation</p>
+              <div class="buttonWrapper">
+                <a href="/images/user.png" target="_blank" class="btn">
+                  Preview
+                </a>
+                <a href="https://github.com/lenzoburger/SearchEngineAutomation" target="_blank" class="btn">
+                  View on Github
+                </a>
+              </div>
+              <p class="description">Automated Testing of different search engines</p>
+              <div class="projectSkills">
+                <p>Technologies Used:</p>
+                <ul class="skillsList">
+                  <li class="skill">.NET Framework</li>
+                  <li class="skill">C#</li>
+                  <li class="skill">Selenium</li>
+                  <li class="skill">Batch</li>
+                  <li class="skill">MSTest Unit Test Framework</li>
+                  <li class="skill">JSON/CSV</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardContainer">
+          <div class="card">
+            <div class="projectImageWrapper">
+              <img class="screenshot" src="/images/user.png" alt=" Elphant Resort project screenshot">
+            </div>
+            <div class="cardBody">
+              <p class="cardTitle">Personal Portfolio</p>
+              <div class="buttonWrapper">
+                <a href="/images/user.png" target="_blank" class="btn">
+                  Preview
+                </a>
+                <a href="https://github.com/lenzoburger/SearchEngineAutomation" target="_blank" class="btn">
+                  View on Github
+                </a>
+              </div>
+              <p class="description">Personal Portfolio to diplay porjects</p>
+              <div class="projectSkills">
+                <p>Technologies Used:</p>
+                <ul class="skillsList">
+                  <li class="skill">Angular 7+</li>
+                  <li class="skill">Node.Js</li>
+                  <li class="skill">HTML</li>
+                  <li class="skill">SASS</li>
+                  <li class="skill">Bootstrap</li>
+                  <li class="skill">Github Pages</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardContainer">
+          <div class="card">
+            <div class="projectImageWrapper">
+              <img class="screenshot" src="/images/user.png" alt=" Elphant Resort project screenshot">
+            </div>
+            <div class="cardBody">
+              <p class="cardTitle">Genetic Algorithm Project</p>
+              <div class="buttonWrapper">
+                <a href="/images/user.png" target="_blank" class="btn">
+                  Preview
+                </a>
+                <a href="https://github.com/lenzoburger/SearchEngineAutomation" target="_blank" class="btn">
+                  View on Github
+                </a>
+              </div>
+              <p class="description">Genetic Algorithms</p>
+              <div class="projectSkills">
+                <p>Technologies Used:</p>
+                <ul class="skillsList">
+                  <li class="skill">JAVA</li>
+                  <li class="skill">Machine Learning</li>
+                  <li class="skill">Genetic Algorithm</li>
+                  <li class="skill">SASS</li>
+                  <li class="skill">Bootstrap</li>
+                  <li class="skill">Github Pages</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--*** ABOUT ME ***-->
+    <section id="aboutMe">
+      <h1 class="sectionHeading">About Me</h1>
+      <p class="sectionInfo">
+        Hello, my name is Lencho Burka and I am a front end developer. I thoroughly enjoy creating new
+        things and never shy away from a challenge. Seeing ideas and concepts come to life is one of my
+        favorite parts of the development process. I look forward to continue growing and developing the
+        skills I already have, as well as learning new ones!
+      </p>
+    </section>
+
+    <!--*** CONTACT ***-->
+    <section id="contact">
+      <h1 class="sectionHeading">Get In Touch</h1>
+      <p class="sectionInfo">
+        If you are interested in working with me or want more information about my work, I would love to
+        hear from you! You can contact me by filling out the form or through any of the social media
+        platforms listed below:
+      </p>
+
+      <form name="contactForm" action="/thankyou" netlify>
+        <div class="formGroup">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Name..." required>
+        </div>
+
+        <div class="formGroup">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Message..." cols="30" rows="10" required></textarea>
+        </div>
+
+        <input type="submit" value="Submit" class="btn" id="formSubmit">
+      </form>
+
+      <ul class="icons">
+        <a href="https://github.com/lenzoburger" target="_blank">
+          <li class="contactIcon" id="githubLink">
+            <i class="fab fa-github-alt"></i>
+          </li>
+        </a>
+        <a href="https://www.linkedin.com/in/lencho-burka-935b93118/" target="_blank">
+          <li class="contactIcon" id="linkedInLink">
+            <i class="fab fa-linkedin"></i>
+          </li>
+        </a>
+        <a href="mailto:lenzoburger@gmail.com">
+          <li class="contactIcon" id="emailLink">
+            <i class="far fa-envelope"></i>
+          </li>
+        </a>
+      </ul>
+    </section>
+  </div>
+
+  <!--*** SCRIPTS ***-->
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

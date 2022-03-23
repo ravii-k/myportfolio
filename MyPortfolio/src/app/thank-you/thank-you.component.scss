@@ -1,0 +1,10 @@
+:host {
+  display: grid;
+  place-items: center;
+  div{
+    text-align: center;
+    a {
+      margin-top: 20px;
+    }
+  }
+}

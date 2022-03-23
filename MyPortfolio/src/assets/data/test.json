@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Genetic Algorithm Project",
+    "description": "Genetic Algorithms",
+
+    "projectImage": {
+      "src": "assets/images/blank.png",
+      "alt": "Genetic Algorithm project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Preview",
+      "url": "assets/images/blank.png"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger"
+    },
+
+    "skills": [
+        "JAVA",
+        "Machine Learning",
+        "Genetic Algorithms"
+    ]
+  }
+]

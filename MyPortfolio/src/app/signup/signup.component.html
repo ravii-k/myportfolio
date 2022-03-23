@@ -1,0 +1,33 @@
+<div>
+  <div class="wrapper fadeInDown">
+      <div id="formContent">
+          <div class="fadeIn first">
+              <h2 class='sign'>Sign In</h2>
+              <p class="error">{{error}}</p>
+          </div>
+          <form>
+              <input type="text" id="login" class="fadeIn second" name="email"
+                  placeholder="Email"
+                  [(ngModel)]="user.uemail"/> 
+                  <br>
+                  <br>
+                  <input tupe="number" id="mobile"  name="Moblie Number" placeholder="ph no"/>
+                  <br>
+                  <br>
+                  <input type="password" [(ngModel)]="user.upassword"
+                  id="password" class="fadeIn third" name="password"
+                  placeholder="Password"/>
+                  <br>
+                  <br>
+                  <input type="password" id="login2" class="fadeIn foutn" name="confirm password" placeholder="confirm password"/>
+                
+            
+                  <br>
+                  <br>
+                     <input type="submit" (click)="login()"
+                  class="fadeIn fourth" value="Log In" />
+          </form>
+          
+      </div>
+  </div>
+</div>

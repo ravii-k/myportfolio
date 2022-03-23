@@ -1,0 +1,236 @@
+[
+  {
+    "title": "Landmark Remark",
+    "description": "Web-App for placing location marker notes on google maps",
+
+    "projectImage": {
+      "src": "assets/images/landmarkRemark16x9.png",
+      "alt": "Landmark Remark project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Preview",
+      "url": "assets/images/landmarkRemark.png"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/landmark-remark-webApp"
+    },
+
+    "skills": [
+        "ASP.NET Core 2.2",
+        "Angular 7",
+        "Entity Framework Core",
+        "SQLite",
+        "HTML, CSS, Bootstrap",
+        "Angular Google Maps(Agm)"
+    ]
+  },
+  {
+    "title": "Elephant Resort",
+    "description": "Site for booking hotel rooms and booking management",
+
+    "projectImage": {
+      "src": "assets/images/elephantResort16_9.png",
+      "alt": "Eelphant Resort project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "View",
+      "url": "http://elephantresort.ap-southeast-2.elasticbeanstalk.com/"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/ElephantResort"
+    },
+
+    "skills": [
+        "Amazon Web Services (AWS)",
+        "Linux",
+        "Apache",
+        "Mysql",
+        "Php",
+        "Javascript, JQuery",
+        "HTML, CSS, XML",
+        "Adobe Illustrator"
+    ]
+  },
+
+  {
+    "title": "Ethio Trade",
+    "description": "Web application for buying and selling goods",
+
+    "projectImage": {
+      "src": "assets/images/EthioTrade16_9.png",
+      "alt": "Ethio Trade project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Preview",
+      "url": "assets/images/EthioTrade.png"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/EthioTrade"
+    },
+
+    "skills": [
+        "C#, ASP.NET Core",
+        "Angular 7",
+        "Entity Framework Core",
+        "SQLite",
+        "Cloudinary- Cloud Photo Storage",
+        "Node.js",
+        "HTML, CSS, Bootstrap"
+    ]
+  },
+
+  {
+    "title": "Search Engine Automation",
+    "description": "Automated Testing of search engines with custom made selenium c# framework.",
+
+    "projectImage": {
+      "src": "assets/images/searchEngineAutomation16_9.png",
+      "alt": "Search Engine Automation project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Preview",
+      "url": "assets/images/searchEngineAutomation.png"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/SearchEngineAutomation"
+    },
+
+    "skills": [
+        ".NET Framework",
+        "C#",
+        "Selenium",
+        "Batch",
+        "MSTest Unit Test Framework",
+        "JSON, CSV"
+    ]
+  },
+
+  {
+    "title": "Personal Portfolio",
+    "description": "Personal portfolio of previous & current projects",
+
+    "projectImage": {
+      "src": "assets/images/personalPortfolio16_9.png",
+      "alt": "Personal Portfolio project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "View",
+      "url": "https://lenzoburger.github.io/MyPortfolio/"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/MyPortfolio"
+    },
+
+    "skills": [
+        "Angular 8",
+        "Node.Js",
+        "HTML, SASS/SCSS",
+        "CSS Grid, Bootstrap 4",
+        "JSON",
+        "Github Pages"
+    ]
+  },
+
+  {
+    "title": "Dreamatorium",
+    "description": "A 2D puzzle/adventure platformer game.",
+
+    "projectImage": {
+      "src": "assets/images/dreamscape16_9.jpg",
+      "alt": "Dreamatorium game project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Play",
+      "url": "http://www.cs.otago.ac.nz/cosc360/game-projects-dreamatorium.php/#unityPlayer"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/Dreamatorium"
+    },
+
+    "skills": [
+        "Unity Game Engine",
+        "Javascript/UnityScript",
+        "Mercurial",
+        "Adobe Illustrator",
+        "2D physics",
+        "2D Sorting"
+    ]
+  },
+
+  {
+    "title": "Species Evolution",
+    "description": "2D life simulation using genetic algorithms and machine learning.",
+
+    "projectImage": {
+      "src": "assets/images/SpeciesEvolutionCrop16_9.png",
+      "alt": "Species Evolution project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Preview",
+      "url": "assets/images/speciesEvolution.png"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/SpeciesEvolution"
+    },
+
+    "skills": [
+        "Java",
+        "Java Swing",
+        "Genetic Algorithm",
+        "Machine Learning",
+        "Git"
+    ]
+  },
+
+  {
+    "title": "Problem Solving 326",
+    "description": "Series of solutions to programming and mathematical problems with time complexity (Big O) constraints",
+
+    "projectImage": {
+      "src": "assets/images/problemSolving326_16_9.png",
+      "alt": "Problem Solving 326 project screenshot"
+    },
+
+    "projectPreview": {
+      "description": "Preview",
+      "url": "assets/images/problemSolving326.png"
+    },
+
+    "projectSourceCode": {
+      "description": "View on Github",
+      "url": "https://github.com/lenzoburger/ProblemSolving326"
+    },
+
+    "skills": [
+        "Java",
+        "Java Swing",
+        "Mathematical models",
+        "Data Structures",
+        "Graph Algorithms",
+        "Sorting & Searching algorithms",
+        "Heuristic algorithms",
+        "Randomized algorithms"
+    ]
+  }
+]
